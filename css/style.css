@@ -1,0 +1,92 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://imgs.search.brave.com/anB6nQAXt5zIOEfmusdNHXGnJYCAn4GBfq8Wwykd7i8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvbWF0aC16YXJw/cTI5MnRtYjN3aHVu/LmpwZw');
+    background-size: cover;
+    margin: 0;
+}
+
+.calculator {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    max-width: 400px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.display {
+    grid-column: 1 / span 4;
+    text-align: right;
+    padding: 10px;
+    background-color: #000;
+    border-radius: 10px;
+    font-size: 36px;
+    color: #33ff99;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+#expression {
+    font-size: 24px;
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#result {
+    font-size: 28px;
+    color: #33ff99;
+}
+
+.result {
+    font-size: 28px;
+    display: block;
+}
+
+.buttons {
+    grid-column: 1 / span 4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+button {
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #222;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #444;
+}
+
+button:active {
+    background-color: #333;
+}
+
+button.equal {
+    background-color: #ffc107;
+    color: black;
+}
+
+button.equal:hover {
+    background-color: #ffb300;
+}
+
+button.equal:active {
+    background-color: #ffa000;
+}
